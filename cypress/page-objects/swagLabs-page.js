@@ -1,4 +1,4 @@
-export class SwagLabPage {
+export class SwagLabsPage {
     navigate() {
         cy.visit('https://www.saucedemo.com/')
     }
@@ -15,8 +15,8 @@ export class SwagLabPage {
         cy.get('.app_logo').should('be.visible')
     }
 
-    validateMainPage(webAdress) {
-        cy.url().should('be.equal', webAdress)
+    validateMainPage(webAddress) {
+        cy.url().should('be.equal', webAddress)
     }
 
     validateErrorMessage(expectedText) {

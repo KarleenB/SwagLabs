@@ -1,10 +1,10 @@
 /// <reference types="cypress" />
 
-import { SwagLabPage } from "../page-objects/swagLabs-page"
+import { SwagLabsPage } from "../page-objects/swagLabs-page"
 
 
 describe('Login Actions', function () {
-    const swagPage = new SwagLabPage()
+    const swagPage = new SwagLabsPage()
 
     beforeEach( function () {
         swagPage.navigate()
